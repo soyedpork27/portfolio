@@ -3,14 +3,12 @@ import React,{useState} from 'react';
 // 최상단 네비게이션 컴포넌트
 import TopStr from './TopStr';
 
-// 하단 콘텐츠 컴포넌트
-import Content from './Content';
 
 // css import
 
 
 import {Outlet} from 'react-router-dom';
-import SideNav from './SideNav';
+
 import Header from './Header';
 
 

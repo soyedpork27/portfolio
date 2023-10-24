@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {useParams} from 'react-router-dom';
 import {useQuery} from '@tanstack/react-query';
 import TeamDetail from './TeamDetail';
@@ -14,7 +14,7 @@ function TeamContent(props) {
   // let [teamData, setTeamData] = useState([]);
 
 
-  let {isLoading, data:teamdata, error} = useQuery(["teamdata"], async ()=>{
+  let {isLoading, data:teamdata} = useQuery(["teamdata"], async ()=>{
 
   return(
     fetch(`/data/teamProject.json`)

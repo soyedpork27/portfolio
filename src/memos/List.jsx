@@ -17,13 +17,6 @@ function List({id, memoData, focus, indent, title, list, updateMemo, addList, de
 
   // console.log(id);
 
-
-  // useEffect() 로 받아오는 메모데이터 업데이트
-  useEffect(()=>{
-    setMemo(memoData);
-    handleFocus();
-  },[memoData, id, indent]);
-
   // autoFocus 핸들러 함수
   const handleFocus = ()=>{
     if(toggle){
@@ -31,6 +24,15 @@ function List({id, memoData, focus, indent, title, list, updateMemo, addList, de
     }
     return false;
   }
+
+  // useEffect() 로 받아오는 메모데이터 업데이트
+  useEffect(()=>{
+    setMemo(memoData);
+    handleFocus();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[memoData, id, indent, toggle]);
+
+  
 
 
   // 블러 될 때 실행되는 함수
@@ -46,7 +48,7 @@ function List({id, memoData, focus, indent, title, list, updateMemo, addList, de
 
     setMemo(e.target.value);
     handleChildChange(e.target.value, id);
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[memo]);
 
   // 미완 Tab 추가해야 한다.

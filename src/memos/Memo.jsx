@@ -87,7 +87,7 @@ function Memo(props) {
 
 
     setMemos((data) => {
-      data.map(item => {
+      data.map((item) => {
         if(item.id > getId){
           item.id = item.id + 1;
 
@@ -104,7 +104,7 @@ function Memo(props) {
       // splice 공부 더 필요
       // children 채우다.
       data.splice(getId, 0 ,{id : getId+1, value : "", focus : true, title : false, list : false, open : false, indent : 0, children : []});
-    })
+    });
 
     
   }
@@ -116,7 +116,7 @@ function Memo(props) {
     // alert("핸들 리스트")
     
     // memos 업데이트 하기 시작
-    const target = memos.findIndex((item)=>(item.id==Math.floor(getId / 100)));
+    const target = memos.findIndex((item)=>(item.id===Math.floor(getId / 100)));
 
     const targetChildren = Number(getId - (Math.floor(getId / 100) * 100) - 1);
 
@@ -142,9 +142,9 @@ function Memo(props) {
     // console.log((Math.floor(getId - (Math.floor(getId / 100)) * 100 ) ));
 
     // memos 업데이트 하기 시작
-    const target = memos.findIndex((item)=>(item.id==Math.floor(getId / 100)));
+    // const target = memos.findIndex((item)=>(item.id==Math.floor(getId / 100)));
 
-    const targetChildren = Number(getId - (Math.floor(getId / 100) * 100) - 1);
+    // const targetChildren = Number(getId - (Math.floor(getId / 100) * 100) - 1);
 
     
 
@@ -341,11 +341,11 @@ function Memo(props) {
 
     // 상위 컴포넌트에 children 값이 있는지에 따라 변수 할당
     // const upExist = (memos[id-2]) && ( (memos[id-2].children.length) ? true : false ) ;
-    const upExist = (memos[id-2]) && ( (memos[id-2].list) ? true : false ) ;
+    // const upExist = (memos[id-2]) && ( (memos[id-2].list) ? true : false ) ;
 
     // 있다면 마지막 인덱스 번호 저장
     // const upLastIndex = upExist ? (memos[id-2].children.length-1) : null;
-    const upLastIndex = upExist ? (memos[id-2].children.length-1) : null;
+    // const upLastIndex = upExist ? (memos[id-2].children.length-1) : null;
 
 
     // children이 있다면
@@ -540,7 +540,7 @@ function Memo(props) {
 
   // 클릭 시 맨 뒤에 메모 추가하기
   const addLastMemo = ()=>{
-    const lastIndex = memos.length;
+    // const lastIndex = memos.length;
     setMemos((data)=>{
       data.push({
       id : Number(data.length + 1),
@@ -1041,115 +1041,115 @@ export default Memo;
 
 
 // 초기 데이터 로컬 스토리지 연결 후 사용 X
-const initialData = [
-  {
-    id : 1,
-    value : "첫 번째 메모",
-    focus : false,
-    title : false,
-    list : false,
-    open : false,
-    indent : 0,
-    children : []
-  },
-  {
-    id : 2,
-    value : "두 번째 메모",
-    focus : false,
-    title : false,
-    list : false,
-    open : false,
-    indent : 0,
-    children : []
-  },
-  {
-    id : 3,
-    value : "세 번째 메모",
-    focus : false,
-    title : false,
-    list : true,
-    open : false,
-    indent : 0,
-    children : [
-      {
-        id : 301,
-        value : "나갈친구1",
-        focus : false,
-        title : false,
-        list : false,
-        open : false
-      },
-      {
-        id : 302,
-        value : "나갈친구2",
-        focus : false,
-        title : false,
-        list : false,
-        open : false
-      },
-      {
-        id : 303,
-        value : "나갈친구3",
-        focus : false,
-        title : false,
-        list : false,
-        open : false
-      }
-    ]
-  },
-  {
-    id : 4,
-    value : "네 번째 메모",
-    focus : false,
-    title : false,
-    list : false,
-    open : false,
-    indent : 0,
-    children : []
-  },
-  {
-    id : 5,
-    value : "5 번째 메모",
-    focus : false,
-    title : false,
-    list : true,
-    open : false,
-    indent : 0,
-    children : [
-      {
-        id : 501,
-        value : "자손메모1",
-        focus : false,
-        title : false,
-        list : false,
-        open : false
-      },
-      {
-        id : 502,
-        value : "자손메모2",
-        focus : false,
-        title : false,
-        list : false,
-        open : false
-      }
-    ]
-  }
-];
+// const initialData = [
+//   {
+//     id : 1,
+//     value : "첫 번째 메모",
+//     focus : false,
+//     title : false,
+//     list : false,
+//     open : false,
+//     indent : 0,
+//     children : []
+//   },
+//   {
+//     id : 2,
+//     value : "두 번째 메모",
+//     focus : false,
+//     title : false,
+//     list : false,
+//     open : false,
+//     indent : 0,
+//     children : []
+//   },
+//   {
+//     id : 3,
+//     value : "세 번째 메모",
+//     focus : false,
+//     title : false,
+//     list : true,
+//     open : false,
+//     indent : 0,
+//     children : [
+//       {
+//         id : 301,
+//         value : "나갈친구1",
+//         focus : false,
+//         title : false,
+//         list : false,
+//         open : false
+//       },
+//       {
+//         id : 302,
+//         value : "나갈친구2",
+//         focus : false,
+//         title : false,
+//         list : false,
+//         open : false
+//       },
+//       {
+//         id : 303,
+//         value : "나갈친구3",
+//         focus : false,
+//         title : false,
+//         list : false,
+//         open : false
+//       }
+//     ]
+//   },
+//   {
+//     id : 4,
+//     value : "네 번째 메모",
+//     focus : false,
+//     title : false,
+//     list : false,
+//     open : false,
+//     indent : 0,
+//     children : []
+//   },
+//   {
+//     id : 5,
+//     value : "5 번째 메모",
+//     focus : false,
+//     title : false,
+//     list : true,
+//     open : false,
+//     indent : 0,
+//     children : [
+//       {
+//         id : 501,
+//         value : "자손메모1",
+//         focus : false,
+//         title : false,
+//         list : false,
+//         open : false
+//       },
+//       {
+//         id : 502,
+//         value : "자손메모2",
+//         focus : false,
+//         title : false,
+//         list : false,
+//         open : false
+//       }
+//     ]
+//   }
+// ];
 
 
 // 클래스 사용해보기
-class NomallyMemo {
-  constructor (id, value, focus, title, list, open, indent, children ){
-    this.id = id;
-    this.value = value;
-    this.focus = focus;
-    this.title = title;
-    this.list = list;
-    this.open = open;
-    this.indent = indent;
-    this.children = children;
-  }
-}
+// class NomallyMemo {
+//   constructor (id, value, focus, title, list, open, indent, children ){
+//     this.id = id;
+//     this.value = value;
+//     this.focus = focus;
+//     this.title = title;
+//     this.list = list;
+//     this.open = open;
+//     this.indent = indent;
+//     this.children = children;
+//   }
+// }
 
 // 인덱스 번호를 구하는 함수
 function createIndex(idx) {

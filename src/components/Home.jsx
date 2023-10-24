@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import {useQuery} from '@tanstack/react-query';
 import HomeCard from './HomeCard';
@@ -8,7 +8,7 @@ import "../css/home.css";
 
 function Home(props) {
 
-  let {isLoading : teamLoading, data:teamdata, teamError} = useQuery(["teamdata"], async ()=>{
+  let {isLoading : teamLoading, data:teamdata} = useQuery(["teamdata"], async ()=>{
 
     return(
       fetch(`/data/teamProject.json`)
@@ -18,7 +18,7 @@ function Home(props) {
       staleTime : 1000 * 60 * 3
     });
 
-    let {isLoading : personalLoading, data : personaldata, personalError} = useQuery(["personaldata"], async () => {
+    let {isLoading : personalLoading, data : personaldata} = useQuery(["personaldata"], async () => {
       return (
         fetch(`/data/personalProject.json`)
         .then((res) => (res.json()))

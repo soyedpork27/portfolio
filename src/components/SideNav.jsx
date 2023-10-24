@@ -5,12 +5,6 @@ import {useImmer} from 'use-immer';
 import {Link} from 'react-router-dom';
 
 
-const style ={
-  li : {
-
-  }
-}
-
 function SideNav(props) {
 
   let [memoTitle, setMemoTitle ] = useState("");
@@ -106,7 +100,7 @@ function SideNav(props) {
           <li className='title-team'>
             {/* 토글 시 가리기 */}
             <span className='team-title toggle' onClick={()=>(setTeamToggle((prev)=>(!prev)))}>
-               <img src={`${process.env.PUBLIC_URL}/images/angle_${teamToggle?`down`:`right`}.svg`} className='team-angle' /> 팀 프로젝트
+               <img src={`${process.env.PUBLIC_URL}/images/angle_${teamToggle?`down`:`right`}.svg`} alt='토글버튼' className='team-angle' /> 팀 프로젝트
             </span>
           </li>
           <li>
@@ -121,7 +115,7 @@ function SideNav(props) {
           <li className='title-team'>
             {/* 토글 시 가리기 */}
             <span className='team-title toggle' onClick={()=>(setPersonalToggle((prev)=>(!prev)))}>
-               <img src={`${process.env.PUBLIC_URL}/images/angle_${personalToggle?`down`:`right`}.svg`} className='team-angle' /> 개인 프로젝트
+               <img src={`${process.env.PUBLIC_URL}/images/angle_${personalToggle?`down`:`right`}.svg`} alt='토글버튼' className='team-angle' /> 개인 프로젝트
             </span>
           </li>
           <li>
@@ -138,7 +132,7 @@ function SideNav(props) {
           <li className='title-team'>
             {/* 토글 시 가리기 */}
             <span className='team-title toggle' onClick={()=>(setMemoToggle((prev)=>(!prev)))}>
-               <img src={`${process.env.PUBLIC_URL}/images/angle_${memoToggle?`down`:`right`}.svg`} className='team-angle' /> 메모장
+               <img src={`${process.env.PUBLIC_URL}/images/angle_${memoToggle?`down`:`right`}.svg`} alt='토글버튼' className='team-angle' /> 메모장
             </span>
           </li>
           <li>

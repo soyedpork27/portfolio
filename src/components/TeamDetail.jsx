@@ -6,7 +6,7 @@ function TeamDetail({data}) {
 
   let [over, setOver] = useState(0);
 
-  let [mod ,setMod] = useState(false);
+  // let [mod ,setMod] = useState(false);
 
 
 

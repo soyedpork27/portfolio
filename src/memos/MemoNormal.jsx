@@ -1,5 +1,5 @@
 import React, {useCallback, useEffect, useState} from 'react';
-import MemoList from './MemoList';
+// import MemoList from './MemoList';
 
 import TextAreaAutoResize from "react-textarea-autosize";
 

@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import {useParams} from 'react-router-dom';
-import {useQuery} from '@tanstack/react-query';
+// import {useQuery} from '@tanstack/react-query';
 import MemoDetail from './MemoDetail';
 
 function MemoContent(props) {
