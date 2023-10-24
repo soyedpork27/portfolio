@@ -121,12 +121,14 @@ function TopStr({str ,topToggle, onToggle}) {
                 <p className='Modal-p_title'>기능</p>
                 <p className='Modal-p_title'>레퍼런스</p>
                 <p className='Modal-p_title'>용도</p>
+                <p className='Modal-p_title'>개발기간</p>
               </div>
               <div className='desc-desc_box'>
                 <p className='Modal-p_desc'>React</p>
                 <p className='Modal-p_desc'>Memo</p>
                 <p className='Modal-p_desc'>Notion App</p>
                 <p className='Modal-p_desc'>취업 포트폴리오</p>
+                <p className='Modal-p_desc'>7월 - 10월</p>
               </div>
             </div>
 
