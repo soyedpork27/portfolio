@@ -1,0 +1,305 @@
+
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.memo_ctnt{
+  width : 100%;
+  margin-top : 100px;
+}
+
+.drag_btn{
+  position: relative;
+  background: none;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  margin : 0 4px;
+}
+
+.memo_null {
+  color : #fff;
+  line-height : 40px;
+}
+
+html{
+  /* font-family: sans-serif !important; */
+  font-family : 'Pretendard-Regular';
+}
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+textarea {
+  display : block;
+  width : 100%;
+}
+
+textarea:focus {
+  /* outline : 1px dashed #ddd; */
+  outline : none;
+  font-family : 'Pretendard-Regular';
+}
+
+ol, ul {
+  list-style: none;
+}
+
+*{
+  margin : 0;
+  padding : 0;
+  font-family : 'Pretendard-Regular';
+}
+
+.last_add_btn{
+  transition : .3s;
+  color : #ddd;
+  font-size : 18px;
+  font-weight : bold;
+  background : none;
+  border : none;
+  cursor : pointer;
+}
+
+.last_add_btn:hover{
+  color : #999;
+}
+
+/* .drop_area{
+  position : absolute;
+  display : none;
+  left : 10%;
+  top : 40px;
+  width : 80%;
+  height : 6px;
+  background-color : #ccc;
+  border-radius: 5px;
+} */
+
+.MEMO {
+  box-sizing: border-box;
+  width : 100%;
+  padding-left : 16%;
+}
+
+
+
+.hidden {
+  display : none;
+}
+
+/* memo 시작 */
+.memo_box {
+  /* width : 100%; */
+  display : flex;
+  align-items :first baseline;
+  position : relative;
+  margin-top : 8px;
+  box-sizing : border-box;
+  padding-right : 48px;
+}
+
+
+
+
+
+.memo_box:hover .text_tool {
+  opacity : 1;
+}
+
+.text_tool {
+  width : 32px;
+  display : flex;
+  /* justify-content : center; */
+  position : relative;
+  opacity : 0;
+  transition : .3s;
+}
+
+.tool_plus{
+  cursor : pointer;
+}
+
+.type_modal{
+  position : absolute;
+  left : -118px;
+  top : 40px;
+  width : 150px;
+  z-index : 9999;
+  border : 1px solid #ccc;
+  border-radius : 4px;
+  background-color : rgba(255,255,255,.9);
+  overflow: hidden;
+  box-shadow: -6px 6px 7px 3px rgba(135,135,135,0.55);
+  -webkit-box-shadow: -6px 6px 7px 3px rgba(135,135,135,0.55);
+  -moz-box-shadow: -6px 6px 7px 3px rgba(135,135,135,0.55);
+}
+
+.modal_bg {
+
+}
+
+.modal_list {
+  cursor : pointer;
+}
+
+.modal_btn {
+  background : none;
+  width : 100%;
+  line-height : 1.5;
+  font-size: 20px;
+  border : none;
+  cursor : pointer;
+  display : flex;
+  line-height : 62px;
+}
+
+.modal_btn:hover {
+  background-color : rgb(239,239,239);
+}
+
+.btn_img {
+  margin : 6px;
+}
+
+.memo_wrap{
+  width : calc(100% - 16px);
+  margin-left : 4px;
+}
+
+.memo_form01{
+  width : 100%;
+  display : block;
+}
+
+/* 기본 메모 textarea 태그 */
+.memo_textArea01{
+  width : 100%;
+
+}
+
+.memo_textArea01:focus {
+  outline : none;
+}
+
+.memo_textArea01::placeholder {
+  text-indent : 2px;
+}
+
+.memo_p {
+  width : 100%;
+  cursor : text;
+  white-space: pre-wrap;
+
+}
+
+/* memo 끝 */
+
+
+
+/* memoList 시작 */
+
+.toggle_dl {
+  display : block;
+}
+
+.toggle_wrap{
+  box-sizing: border-box;
+  padding-right : 48px;
+}
+
+.toggle_dt {
+  display : block;
+  width : 100%;
+}
+
+.toggle_textArea01{
+  width : 100%;
+
+}
+
+.list_toggle{
+  transition : .2s;
+
+}
+
+.list_on{
+  transform : rotate(90deg);
+}
+
+/* memoList 끝 */
+
+/* list 시작 */
+
+.list_wrap_01 {
+  width : 100%;
+  position : relative;
+  box-sizing: border-box;
+  padding-right : 48px;
+}
+
+.list_textArea01{
+
+  border : 0;
+  box-sizing: border-box;
+  line-height : 40px;
+  font-size : 16px;
+  font-family : sans-serif;
+}
+
+.list_p {
+  line-height : 40px;
+  font-size : 16px;
+}
+
+.list_drop {
+  height : 6px;
+  border-radius : 5px;
+  position : absolute;
+  left : 30px;
+  bottom : 0;
+  background-color : #AACEFF;
+  z-index : 9999;
+}
+
+
+
+/* list 끝 */
+
+
+@media (max-width : 1200px){
+  .MEMO {
+    padding-left : 32px;
+  }
+
+  .memo_ctnt{
+    margin-top : 50px;
+  }
+
+  .memo_box {
+    /* width : 100%; */
+    padding-right : 16px;
+  }
+
+  .toggle_wrap{
+    box-sizing: border-box;
+    padding-right : 16px;
+  }
+
+  .list_wrap_01 {
+    width : 100%;
+    position : relative;
+    box-sizing: border-box;
+    padding-right : 16px;
+  }
+
+}

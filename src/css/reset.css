@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS 초기화 */
+
+/* 아래 태그들만 골라서 여백을 초기화한다. 사용자가 추가, 삭제하셔도 됨. */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}
+
+/* HTML5 태그가 적용되지 않는 오래된 브라우저에서 인식할 수 있도록 블럭요소로 설정*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+
+body {line-height: 1;} /* 줄간격 100% */
+ol, ul, li {list-style: none;} /* 목록앞 기호를 안나오게 한다.*/
+blockquote, q {quotes: none;} /* 인용문 기호 안나오게 한다. */
+
+/* 인용문 앞, 뒤쪽에 콘텐츠내용 빈공백 삽입 */
+blockquote:before, blockquote:after,q:before, q:after {content: '';	content: none;} 
+
+/* 테이블 태그 작성시 셀과 셀과 사이 여백을 없앰.*/
+table {border-collapse: collapse;	border-spacing: 0;} 
+
+a{
+  text-decoration: none;
+  color : #000;
+}

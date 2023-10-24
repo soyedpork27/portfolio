@@ -1,0 +1,62 @@
+[
+  {
+    "id" : 1,
+    "title" : "LUSH 홈페이지 반응형 리뉴얼",
+    "my" : {
+      "role" : "개발",
+      "task" : "퍼블리싱",
+      "page" : "index.html"
+    },
+    "good" : "반응형 웹 레이아웃에 대해 이해할 수 있었다.",
+    "missing" : "자바스크립트를 활용할 기회를 잘 얻지 못했다.",
+    "effort" : "요소에 이벤트를 부여하기 위해 jQuery를 공부했다.",
+    "url" : "http://www.soyedpork27.pe.kr/project01/index.html",
+    "img" : "team/Lush_main.png",
+    "language" : ["html","css","javascript"]
+  },
+  {
+    "id" : 2,
+    "title" : "netmarble 홈페이지 적응형 리뉴얼",
+    "my" : {
+      "role" : "조장",
+      "task" : "퍼블리싱, 개발",
+      "page" : "netmarble.html"
+    },
+    "good" : "웹 레이아웃(퍼블리싱)에 대한 이해가 매우 높아졌다.",
+    "missing" : "jQuery에 많이 의존하였으며 php문서를 작성하지 못했다.",
+    "effort" : "javascript를 더 깊이 공부해 퍼블리싱(이벤트, 레이아웃)에 활용할 수 있도록 하였다.",
+    "url" : "http://soyedpork27.dothome.co.kr/project02/index.html",
+    "img" : "team/netmarble_main.png",
+    "language" : ["javascript","jQuery"]
+  },
+  {
+    "id" : 3,
+    "title" : "ClassU LMS 웹 페이지 개설1",
+    "my" : {
+      "role" : "조장",
+      "task" : "개발, Db설계, 형상관리",
+      "page" : "Dash_board.php"
+    },
+    "good" : "php 문서를 작성할 수 있었고, 세션 로직을 설계할 수 있었다.",
+    "missing" : "php에 대한 이해가 부족하여 프로젝트를 성공적으로 이끌지 못했다.",
+    "effort" : "인강으로 php와 javascript를 학습해 실력을 향상시켰다.",
+    "url" : "http://soyedpork27.dothome.co.kr/login.html",
+    "img" : "team/ClassU_01.png",
+    "language" : ["javascript","jQuery","php"]
+  },
+  {
+    "id" : 4,
+    "title" : "ClassU LMS 웹 페이지 개설2",
+    "my" : {
+      "role" : "개발",
+      "task" : "퍼블리싱, 개발, DB 설계",
+      "page" : "모든 페이지에 관여"
+    },
+    "good" : "php에 대해 더 깊이 이해하고, 주도적으로 DB를 설계, 수정할 수 있게 되었다.",
+    "missing" : "순수한 javascript 문서를 작성할 기회를 얻지 못했고, 3차 프로젝트의 페이지와 연동하지 못했다.",
+    "effort" : "vanilla JS와 php를 활용해 개인 프로젝트를 시작했다.",
+    "url" : "http://www.soyedpork27.pe.kr/index.php",
+    "img" : "team/ClassU_02.png",
+    "language" : ["javascript","scss","jQuery","php"]
+  }
+]
