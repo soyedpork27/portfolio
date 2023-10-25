@@ -27,11 +27,11 @@ function HomeCard({data}) {
             <p  className='card-txt_desc'>
               맡은 일 : {data.my.task}
             </p>
-            <p  className='card-txt_desc'>
+            {/* <p  className='card-txt_desc'>
               개발 범위 : {data.my.page}
-            </p>
-            <p className='card-txt_desc'>
-              언어 : {data.language.join(", ")}
+            </p> */}
+            <p className='card-txt_desc gray'>
+              {data.language.join(" / ")}
             </p>
             </>
             :

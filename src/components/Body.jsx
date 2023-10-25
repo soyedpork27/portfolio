@@ -59,27 +59,22 @@ export default function Body({proMod}) {
     {
       id : 2,
       txt : '전찬혁',
-      list : ['94년생 30세','INFP','남성']
+      list : ['94년생 29세','INFP','남성']
     },
     {
       id : 3,
-      txt : 'Skill',
+      txt : '기술',
       list : ['HTML5','CSS3',"PHP","JavaScript","Git & GitHub","React"]
     },
     {
       id : 4,
-      txt : 'Todo',
-      list : ["React","React native","Swift","Kotlin or Java"]
+      txt : '계획',
+      list : ["React","React native","Swift","Kotlin","Python"]
     },
     {
       id : 5,
-      txt : 'Record',
-      list : ["Green Computer Academy","Web Design qulification"]
-    },
-    {
-      id : 6,
-      txt : 'Introduce',
-      list : ["자기소개"]
+      txt : '경험',
+      list : ["그린 컴퓨터 아카데미 수료","웹 디자인 기능사 취득"]
     }
   ];
 
