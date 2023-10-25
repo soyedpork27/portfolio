@@ -1024,7 +1024,7 @@ function Memo(props) {
       {memos.length ? memos.map((item) => (item.list ? <MemoList key={item.id} id={item.id} memoData={item.value} children={item.children} focus={item.focus} title={item.title} list={item.list} open={item.open} idt={item.indent} handleIndent={handleIndent} drag={drag} updateMemo={handleList} handleToggleBlur={handleToggleBlur} addMemo={addMemo} addList={addList} deleteMemo={deleteMemo} setCursor={setCursor} setMode={setMode} deleteChild={deleteChild} handleChildChange={handleChildChange} handleDragStart={handleDragStart} addVacantChild={addVacantChild} handleDragEnd={handleDragEnd} /> :(<MemoNormal key={item.id} id={item.id} memoData={item.value} focus={item.focus} title={item.title} list={item.list} idt={item.indent} handleIndent={handleIndent} drag={drag}  updateMemo={handleMemo} addMemo={addMemo} deleteMemo={deleteMemo} setCursor={setCursor} setMode={setMode} memoToChild={memoToChild} handleDragStart={handleDragStart} handleDragEnd={handleDragEnd} memoFront={memoFront}  delCursor={delCursor} />))) : <p onClick={createMemo}>메모가 없습니다.</p>}
 
       <div>
-        <button onClick={addLastMemo} className='last_add_btn' > 클릭하여 메모 추가 </button>
+        <button onClick={addLastMemo} className='last_add_btn' > <span className='pc_click'>클릭</span><span className='mobile_touch'>터치</span>하여 메모 추가 </button>
       </div>
 
       {/* <button onClick={deleteData}>데이터 삭제</button>

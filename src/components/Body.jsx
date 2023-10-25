@@ -59,7 +59,7 @@ export default function Body({proMod}) {
     {
       id : 2,
       txt : '전찬혁',
-      list : ['94년생 29세','JUNIOR DEV','남성']
+      list : ['94년생','리액트 개발자','남성']
     },
     {
       id : 3,

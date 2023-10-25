@@ -303,3 +303,23 @@ ol, ul {
   }
 
 }
+
+.pc_click{
+  display : inline;
+}
+
+.mobile_touch{
+  display: none;
+}
+
+@media (max-width : 1023px){
+
+  .pc_click{
+    display : none;
+  }
+  
+  .mobile_touch{
+    display: inline;
+  }
+
+}
