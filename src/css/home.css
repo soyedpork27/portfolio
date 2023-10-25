@@ -245,8 +245,12 @@
     font-weight : bold;
     margin : 14px 0 0 16px;
     cursor : default;
+  }
+
+  .card-txt_title{
     font-size : 14px;
   }
+
   .card-txt_desc{
     font-size : 12px;
   }
