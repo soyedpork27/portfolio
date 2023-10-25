@@ -54,26 +54,26 @@ export default function Body({proMod}) {
     {
       id : 1,
       img : '/images/react_img.svg',
-      list : ["이 App에 관하여" , "페이지 닫기"]
+      list : ["이 App에 관하여"]
     },
     {
       id : 2,
       txt : '전찬혁',
-      list : ['94년생 29세','INFP','남성']
+      list : ['94년생 29세','JUNIOR DEV','남성']
     },
     {
       id : 3,
-      txt : '기술',
+      txt : 'SKILL',
       list : ['HTML5','CSS3',"PHP","JavaScript","Git & GitHub","React"]
     },
     {
       id : 4,
-      txt : '계획',
+      txt : 'PLAN',
       list : ["React","React native","Swift","Kotlin","Python"]
     },
     {
       id : 5,
-      txt : '경험',
+      txt : 'RECORD',
       list : ["그린 컴퓨터 아카데미 수료","웹 디자인 기능사 취득"]
     }
   ];

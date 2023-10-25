@@ -89,7 +89,8 @@ function SideNav(props) {
   return (
     <>
       <nav className='side_nav'>
-        <p className='home_btn'> <Link to="/" className="link_home link" ><img src={`${process.env.PUBLIC_URL}/images/home_icon.svg`} alt="홈 아이콘 이미지" className='home_img' />
+        <p className='home_btn'> <Link to="/" className="link_home link" >
+          {/* <img src={`${process.env.PUBLIC_URL}/images/home_icon.svg`} alt="홈 아이콘 이미지" className='home_img' /> */}
           <span className='home_str'>
             Home
           </span>

@@ -22,10 +22,10 @@ function HomeCard({data}) {
               {data.title}
             </h4>
             <p  className='card-txt_desc'>
-              역할 : {data.my.role}
+              role : {data.my.role}
             </p>
             <p  className='card-txt_desc'>
-              맡은 일 : {data.my.task}
+              task : {data.my.task}
             </p>
             {/* <p  className='card-txt_desc'>
               개발 범위 : {data.my.page}

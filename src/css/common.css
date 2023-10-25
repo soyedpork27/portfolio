@@ -84,7 +84,8 @@
   position : absolute;
   top : 32px;
   left : -15px;
-  background-color :rgba(121, 121, 121,.95);
+  /* background-color :rgba(121, 121, 121,.95); */
+  background-color :rgba(131, 131, 131, 0.98);
   border-radius: 5px;
   box-sizing: border-box;
   border : 1px solid #676767;

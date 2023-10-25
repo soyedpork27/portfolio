@@ -4,8 +4,10 @@
 .home_title{
   font-size : 32px;
   font-weight : bold;
-  margin : 32px;
-  padding-bottom : 32px;
+  /* margin : 32px;
+  padding-bottom : 32px; */
+  margin: 24px 32px;
+  padding-bottom: 24px;
   border-bottom : 2px solid #eee;
   transition : .3s;
 }
@@ -59,7 +61,7 @@
 
 .card:hover{
   background-color : #f0f0f0;
-  scale : 1.05;
+  scale : 1.03;
 }
 
 .card-txt_box{

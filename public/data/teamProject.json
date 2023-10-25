@@ -3,7 +3,7 @@
     "id" : 1,
     "title" : "LUSH 홈페이지 반응형 리뉴얼",
     "my" : {
-      "role" : "개발",
+      "role" : "개발(DEV)",
       "task" : "퍼블리싱",
       "page" : "index.html"
     },
@@ -18,7 +18,7 @@
     "id" : 2,
     "title" : "netmarble 홈페이지 적응형 리뉴얼",
     "my" : {
-      "role" : "조장",
+      "role" : "조장(PL)",
       "task" : "퍼블리싱, 개발",
       "page" : "netmarble.html"
     },
@@ -33,7 +33,7 @@
     "id" : 3,
     "title" : "ClassU LMS 웹 페이지 개설1",
     "my" : {
-      "role" : "조장",
+      "role" : "조장(PL)",
       "task" : "개발, Db설계, 형상관리",
       "page" : "Dash_board.php"
     },
@@ -48,7 +48,7 @@
     "id" : 4,
     "title" : "ClassU LMS 웹 페이지 개설2",
     "my" : {
-      "role" : "개발",
+      "role" : "개발(DEV)",
       "task" : "퍼블리싱, 개발, DB 설계",
       "page" : "모든 페이지에 관여"
     },

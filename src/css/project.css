@@ -5,12 +5,12 @@
 
 .project_wrap{
   box-sizing: border-box;
-  padding : 32px;
+  padding : 24px 32px;
 }
 
 .project_personal_title{
   font-size : 32px;
-  padding-bottom : 32px;
+  padding-bottom : 24px;
   border-bottom : 2px solid #eee;
   margin-bottom : 32px;
   font-weight : bold;
@@ -509,7 +509,8 @@
   /* width : 10px; */
   border-radius: 15px;
   /* background-color: rgb(140, 140, 140); */
-  background-color: rgb(9, 35, 69);
+  background-color: rgb(131, 131, 131);
+  /* background-color: rgb(9, 35, 69); */
 }
 
 .project_mod_bg::-webkit-scrollbar-thumb {

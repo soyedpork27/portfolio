@@ -43,9 +43,6 @@ function TopStr({str ,topToggle, onToggle}) {
                 {str.list[0]}
               </li>
 
-              <li onClick={()=>(window.close())}>
-                {str.list[1]}
-              </li>
             </ul>
 
         </div> :
