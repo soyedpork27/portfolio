@@ -11,11 +11,12 @@
   },
   {
     "id" : 6,
-    "title" : "YouTube API를 이용한 React 웹 제작하기(인강 프로젝트)",
-    "point" : ["React js", "API"],
-    "good" : "",
-    "missing" : "",
-    "url" : "",
-    "img" : ""
+    "title" : "리액트로 만든 나만의 단어장",
+    "point" : ["React로 개발", "localStorage 사용", "useContext로 UI 변경", "netlify 배포", "모바일 웹앱"],
+    "good" : "다양한 hooks를 사용해 페이지 이동과, UI변경 기능을 구현하였다.",
+    "missing" : "프로젝트 규모가 작아 useReducer 같은 코드 재사용 hooks를 사용 경험 부재",
+    "url" : "https://bespoke-puppy-9b7387.netlify.app/",
+    "img" : "personal/6_main.png",
+    "desc" : []
   }
 ]

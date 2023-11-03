@@ -241,6 +241,10 @@
   border : 6px solid rgb(250,236,167);
 }
 
+.img_border.img_6{
+  border : 6px solid rgb(0, 0, 0);
+}
+
 .page_list_wrap{
   display : flex;
   gap : 32px;
