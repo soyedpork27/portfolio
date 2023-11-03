@@ -28,9 +28,9 @@ function TeamDetail({data}) {
   <div className='project_img_box'>
       <div className='project_img_wrap'>
         <img src={`${process.env.PUBLIC_URL}/images/${over===0 ? data.img : `team/${data.id}_0${over+1}.png`}`} alt="메인 페이지 이미지" className='project_main_img' />
-        <div className='project_img_curtain'>
+        {/* <div className='project_img_curtain'>
           <span className='curtain_txt'>클릭 시 프로젝트 상세설명</span>
-        </div>
+        </div> */}
       </div>
 
       <div className='gallery_mobile'>
